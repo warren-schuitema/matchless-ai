@@ -8,6 +8,14 @@ The website features a multi-page architecture with dedicated sections for servi
 
 ## Recent Changes
 
+**November 11, 2025 - About Page Personal Transformation**
+- Transformed About page from generic text to photo-rich personal story
+- Added hero section with professional speaking photo as background
+- Created alternating image/text layout showcasing three personal photos (coffee shop, workspace, portrait)
+- Implemented responsive design: alternating columns on desktop, proper stacking on mobile
+- Fixed mobile layout using flexbox with CSS order for middle section
+- Enhanced personal connection and "Built by a parent entrepreneur" messaging with visual reinforcement
+
 **November 11, 2025 - Booking System Enhancement**
 - Replaced TidyCal iframe embed with cleaner direct-link booking approach
 - Created `BookingOptions` component featuring three booking tiers in card format
@@ -45,7 +53,7 @@ Preferred communication style: Simple, everyday language.
 
 **Routing Structure:**
 - `/` - Homepage with hero, pain points, solutions, process, testimonials, services, pricing, CTA
-- `/about` - Personal story and credentials
+- `/about` - Photo-rich personal story with alternating image/text layout featuring speaking, coffee shop, workspace, and portrait photos
 - `/services` - Service offerings and process details
 - `/results` - Case studies and client testimonials
 - `/resources` - Blog/content hub
