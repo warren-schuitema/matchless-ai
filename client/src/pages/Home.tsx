@@ -18,11 +18,16 @@ import shaunPhoto from "@assets/Shaun Richardson image_1762891403477.jpg";
 import kellyPhoto from "@assets/Kelly McCord Image_1762891407534.jpg";
 import philPhoto from "@assets/Phil Taylor image_1762891395285.jpg";
 
+import { useEffect } from "react";
+
 export default function Home() {
-  // Set dark mode by default
-  if (typeof document !== 'undefined') {
-    document.documentElement.classList.add('dark');
-  }
+  // Set dark mode by default on mount
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem('theme') === 'dark' || !localStorage.getItem('theme');
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
 
   const painPoints = [
     {
