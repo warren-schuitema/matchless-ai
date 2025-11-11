@@ -1,7 +1,7 @@
 import TestimonialSection from "../TestimonialSection";
-import shaunPhoto from "@assets/generated_images/Client_testimonial_Shaun_Richardson_e5c00729.png";
-import kellyPhoto from "@assets/generated_images/Client_testimonial_Kelly_McCord_5e26c56b.png";
-import philPhoto from "@assets/generated_images/Client_testimonial_Phil_Taylor_a649c9ba.png";
+import shaunPhoto from "@assets/Shaun Richardson image_1762891403477.jpg";
+import kellyPhoto from "@assets/Kelly McCord Image_1762891407534.jpg";
+import philPhoto from "@assets/Phil Taylor image_1762891395285.jpg";
 
 export default function TestimonialSectionExample() {
   const testimonials = [
