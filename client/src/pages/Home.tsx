@@ -10,7 +10,7 @@ import ServicesSection from "@/components/ServicesSection";
 import PricingSection from "@/components/PricingSection";
 import FinalCTA from "@/components/FinalCTA";
 import { Clock, Home as HomeIcon, TrendingUp, FileText, Mail, Calendar, Bot } from "lucide-react";
-import heroImage from "@assets/generated_images/Hero_parent_working_from_home_7e48e289.png";
+import heroImage from "@assets/generated_images/Stressed_parent_missing_family_time_d61982ac.png";
 import zekeImage from "@assets/generated_images/ZEKE_AI_automation_workflow_diagram_a784b0b9.png";
 import finalImage from "@assets/generated_images/Final_CTA_family_success_045409a7.png";
 import shaunPhoto from "@assets/generated_images/Client_testimonial_Shaun_Richardson_e5c00729.png";
@@ -166,7 +166,7 @@ export default function Home() {
           ctaText="Get Your Assessment"
           trustBadge="Trusted by 25+ parent-run businesses"
           imageSrc={heroImage}
-          imageAlt="Parent entrepreneur working from home"
+          imageAlt="Stressed parent entrepreneur missing family time while working"
         />
         <PainPointsSection
           headline="You're Stuck in the Content Trap"

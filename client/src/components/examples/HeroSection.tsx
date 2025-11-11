@@ -1,5 +1,5 @@
 import HeroSection from "../HeroSection";
-import heroImage from "@assets/generated_images/Hero_parent_working_from_home_7e48e289.png";
+import heroImage from "@assets/generated_images/Stressed_parent_missing_family_time_d61982ac.png";
 
 export default function HeroSectionExample() {
   return (
@@ -9,7 +9,7 @@ export default function HeroSectionExample() {
       ctaText="Get Your Assessment"
       trustBadge="Trusted by 25+ parent-run businesses"
       imageSrc={heroImage}
-      imageAlt="Parent entrepreneur working from home"
+      imageAlt="Stressed parent entrepreneur missing family time while working"
       onCtaClick={() => console.log("CTA clicked")}
     />
   );
