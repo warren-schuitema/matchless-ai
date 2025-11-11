@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -41,9 +40,6 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Button size="default" data-testid="button-cta-nav">
-              Get Your Assessment
-            </Button>
           </div>
 
           <button
@@ -73,9 +69,6 @@ export default function Navbar() {
                   {item.label}
                 </Link>
               ))}
-              <Button className="w-full" size="default" data-testid="button-cta-mobile">
-                Get Your Assessment
-              </Button>
             </div>
           </div>
         )}
