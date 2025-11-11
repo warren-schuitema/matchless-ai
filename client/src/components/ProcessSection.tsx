@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "wouter";
 
 interface Step {
   number: number;
@@ -12,7 +13,6 @@ interface ProcessSectionProps {
   subheadline: string;
   steps: Step[];
   ctaText: string;
-  onCtaClick?: () => void;
 }
 
 export default function ProcessSection({
@@ -20,7 +20,6 @@ export default function ProcessSection({
   subheadline,
   steps,
   ctaText,
-  onCtaClick,
 }: ProcessSectionProps) {
   return (
     <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-muted/20">
@@ -74,14 +73,15 @@ export default function ProcessSection({
         </div>
 
         <div className="text-center">
-          <Button
-            size="lg"
-            className="text-lg px-8 min-h-12"
-            onClick={onCtaClick}
-            data-testid="button-process-cta"
-          >
-            {ctaText}
-          </Button>
+          <Link href="/book">
+            <Button
+              size="lg"
+              className="text-lg px-8 min-h-12"
+              data-testid="button-process-cta"
+            >
+              {ctaText}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

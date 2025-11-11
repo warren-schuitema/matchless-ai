@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Calendar, Clock, CheckCircle, Target, Lightbulb, Gift } from "lucide-react";
+import TidyCalEmbed from "@/components/TidyCalEmbed";
+import { Link } from "wouter";
 
 export default function BookAssessment() {
   useEffect(() => {
@@ -149,22 +151,9 @@ export default function BookAssessment() {
                 Choose a time that works best for you. We'll send a calendar invite with all the details.
               </p>
               
-              <div className="p-8 bg-background rounded-lg border border-border mb-8">
-                <p className="text-lg text-muted-foreground mb-4">
-                  Calendar booking system integration coming soon
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  In the meantime, click below to email us directly and we'll schedule your call.
-                </p>
+              <div className="bg-background rounded-lg border border-border p-4">
+                <TidyCalEmbed />
               </div>
-
-              <Button size="lg" className="text-lg px-10 min-h-14" data-testid="button-book-assessment">
-                Email to Schedule
-              </Button>
-              
-              <p className="text-sm text-muted-foreground mt-6">
-                Typical response time: Within 24 hours
-              </p>
             </motion.div>
           </div>
         </section>
@@ -172,16 +161,20 @@ export default function BookAssessment() {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Not Ready to Book Yet?</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Learn more about our services and see real results from businesses like yours.
+            <p className="text-xl text-muted-foreground mb-8">
+              Learn more about our services or see the results we've delivered for other parent entrepreneurs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="outline" size="lg" className="text-lg px-8 min-h-12" data-testid="button-view-services">
-                View Services
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 min-h-12" data-testid="button-see-results">
-                See Results
-              </Button>
+              <Link href="/services">
+                <Button size="lg" variant="outline" className="text-lg px-10 min-h-14" data-testid="button-view-services">
+                  View Services
+                </Button>
+              </Link>
+              <Link href="/results">
+                <Button size="lg" variant="outline" className="text-lg px-10 min-h-14" data-testid="button-view-results">
+                  See Results
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

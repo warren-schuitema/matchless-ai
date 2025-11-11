@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Users } from "lucide-react";
+import { Link } from "wouter";
 
 interface HeroSectionProps {
   headline: string;
@@ -9,7 +10,6 @@ interface HeroSectionProps {
   trustBadge?: string;
   imageSrc: string;
   imageAlt: string;
-  onCtaClick?: () => void;
 }
 
 export default function HeroSection({
@@ -19,7 +19,6 @@ export default function HeroSection({
   trustBadge,
   imageSrc,
   imageAlt,
-  onCtaClick,
 }: HeroSectionProps) {
   return (
     <section className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden gradient-hero">
@@ -40,15 +39,16 @@ export default function HeroSection({
               {subheadline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center pt-4">
-              <Button
-                size="lg"
-                className="text-lg px-10 min-h-14 bg-white text-black hover:bg-white/90 font-semibold group"
-                onClick={onCtaClick}
-                data-testid="button-hero-cta"
-              >
-                {ctaText}
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link href="/book">
+                <Button
+                  size="lg"
+                  className="text-lg px-10 min-h-14 bg-white text-black hover:bg-white/90 font-semibold group"
+                  data-testid="button-hero-cta"
+                >
+                  {ctaText}
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
             {trustBadge && (
               <motion.div 

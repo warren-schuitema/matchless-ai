@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 interface FinalCTAProps {
   headline: string;
@@ -7,8 +8,6 @@ interface FinalCTAProps {
   secondaryCtaText: string;
   imageSrc: string;
   imageAlt: string;
-  onPrimaryCta?: () => void;
-  onSecondaryCta?: () => void;
 }
 
 export default function FinalCTA({
@@ -18,8 +17,6 @@ export default function FinalCTA({
   secondaryCtaText,
   imageSrc,
   imageAlt,
-  onPrimaryCta,
-  onSecondaryCta,
 }: FinalCTAProps) {
   return (
     <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -37,23 +34,25 @@ export default function FinalCTA({
           {subheadline}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size="lg"
-            className="text-lg px-8 min-h-12 bg-accent hover:bg-accent/90 text-accent-foreground"
-            onClick={onPrimaryCta}
-            data-testid="button-final-primary"
-          >
-            {primaryCtaText}
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-lg px-8 min-h-12 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
-            onClick={onSecondaryCta}
-            data-testid="button-final-secondary"
-          >
-            {secondaryCtaText}
-          </Button>
+          <Link href="/book">
+            <Button
+              size="lg"
+              className="text-lg px-8 min-h-12 bg-accent hover:bg-accent/90 text-accent-foreground"
+              data-testid="button-final-primary"
+            >
+              {primaryCtaText}
+            </Button>
+          </Link>
+          <a href="mailto:warren@matchlessmarketing.pro">
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 min-h-12 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
+              data-testid="button-final-secondary"
+            >
+              {secondaryCtaText}
+            </Button>
+          </a>
         </div>
       </div>
     </section>
