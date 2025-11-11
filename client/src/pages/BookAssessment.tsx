@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Calendar, Clock, CheckCircle, Target, Lightbulb, Gift } from "lucide-react";
-import TidyCalEmbed from "@/components/TidyCalEmbed";
+import { Clock, CheckCircle, Target, Lightbulb, Gift } from "lucide-react";
+import BookingOptions from "@/components/BookingOptions";
 import { Link } from "wouter";
 
 export default function BookAssessment() {
@@ -108,7 +108,7 @@ export default function BookAssessment() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Calendar className="w-8 h-8 text-primary" />
+                  <Gift className="w-8 h-8 text-primary" />
                   <div>
                     <h3 className="text-2xl font-bold">100% Free</h3>
                     <p className="text-muted-foreground">No catch, no obligation</p>
@@ -137,24 +137,21 @@ export default function BookAssessment() {
         </section>
 
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <motion.div
-              className="p-12 bg-card rounded-xl border border-border text-center"
+              className="text-center mb-12"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <Calendar className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Schedule Your Assessment</h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Choose a time that works best for you. We'll send a calendar invite with all the details.
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Choose Your Booking Option</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Select the session that best fits your needs. All bookings open a new scheduling page where you can pick your preferred time.
               </p>
-              
-              <div className="bg-background rounded-lg border border-border p-4">
-                <TidyCalEmbed />
-              </div>
             </motion.div>
+            
+            <BookingOptions />
           </div>
         </section>
 
