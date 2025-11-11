@@ -4,6 +4,11 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Heart, Users, Zap, Target } from "lucide-react";
+import { Link } from "wouter";
+import speakingImage from "@assets/1IzrAEBuJrhSrkQF4N38o_b8662213a2af4641a7037b4af0ed6291_1762896661479.png";
+import portraitImage from "@assets/6nhZ-Z6mSUuU_0NCG9wc8_569d6ed9e91d4016823b6b4f4e498240_1762896661486.png";
+import workspaceImage from "@assets/7WHE33eWDQ3WsOKcc-rv6_1a3a65740c354197bd95c10d8c14e46e_1762896661486.png";
+import coffeeShopImage from "@assets/12nq5FoFHvFIRhkmziblw_5b5d3a54994743c4b4172488cb0aafa5_1762896661486.jpg";
 
 export default function About() {
   useEffect(() => {
@@ -40,8 +45,12 @@ export default function About() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1">
-        <section className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden gradient-hero">
-          <div className="absolute inset-0 bg-black/50" />
+        <section className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${speakingImage})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
           
           <div className="relative max-w-4xl mx-auto text-center">
             <motion.h1
@@ -64,18 +73,97 @@ export default function About() {
         </section>
 
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
-          <div className="max-w-4xl mx-auto">
-            <div className="prose prose-lg dark:prose-invert max-w-none">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">The Story</h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                I started Matchless Marketing because I lived the problem. As a parent entrepreneur, I was drowning in the daily grind of content creation, social media management, and all the other tasks that kept me from what mattered most: growing my business and being present for my family.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6">
-                I discovered AI and automation weren't just buzzwords - they were game-changers. What used to take 15+ hours a week now takes 2-3. I'm more consistent, the quality is better, and I actually have time to be a present parent and spouse.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6">
-                Now I help other parent entrepreneurs do the same. Not with cookie-cutter templates or generic AI tools, but with custom-built automation systems designed specifically for your business, your voice, and your workflow.
-              </p>
+          <div className="max-w-7xl mx-auto">
+            <motion.h2 
+              className="text-4xl md:text-5xl font-bold text-center mb-16"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              The Story
+            </motion.h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center mb-16">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <img 
+                  src={coffeeShopImage} 
+                  alt="Warren working at coffee shop"
+                  className="rounded-xl w-full h-auto shadow-2xl"
+                  data-testid="img-coffee-shop"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="space-y-4"
+              >
+                <p className="text-lg text-muted-foreground">
+                  I started Matchless Marketing because I lived the problem. As a parent entrepreneur, I was drowning in the daily grind of content creation, social media management, and all the other tasks that kept me from what mattered most: growing my business and being present for my family.
+                </p>
+              </motion.div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-center mb-16">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="w-full md:w-1/2"
+              >
+                <img 
+                  src={workspaceImage} 
+                  alt="Warren's workspace with automation systems"
+                  className="rounded-xl w-full h-auto shadow-2xl"
+                  data-testid="img-workspace"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="space-y-4 w-full md:w-1/2 md:order-first"
+              >
+                <p className="text-lg text-muted-foreground">
+                  I discovered AI and automation weren't just buzzwords - they were game-changers. What used to take 15+ hours a week now takes 2-3. I'm more consistent, the quality is better, and I actually have time to be a present parent and spouse.
+                </p>
+              </motion.div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <img 
+                  src={portraitImage} 
+                  alt="Warren portrait"
+                  className="rounded-xl w-full h-auto shadow-2xl"
+                  data-testid="img-portrait"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="space-y-4"
+              >
+                <p className="text-lg text-muted-foreground">
+                  Now I help other parent entrepreneurs do the same. Not with cookie-cutter templates or generic AI tools, but with custom-built automation systems designed specifically for your business, your voice, and your workflow.
+                </p>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -92,6 +180,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
                   viewport={{ once: true }}
+                  data-testid={`value-card-${index}`}
                 >
                   <value.icon className="w-12 h-12 text-primary mb-4" />
                   <h3 className="text-2xl font-bold mb-3">{value.title}</h3>
@@ -108,9 +197,11 @@ export default function About() {
             <p className="text-xl text-muted-foreground mb-8">
               Let's talk about how custom automation can transform your business and give you your time back.
             </p>
-            <Button size="lg" className="text-lg px-10 min-h-14" data-testid="button-about-cta">
-              Book Your Assessment
-            </Button>
+            <Link href="/book">
+              <Button size="lg" className="text-lg px-10 min-h-14" data-testid="button-about-cta">
+                Book Your Assessment
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
