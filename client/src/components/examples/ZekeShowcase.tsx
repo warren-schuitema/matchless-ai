@@ -1,5 +1,5 @@
 import ZekeShowcase from "../ZekeShowcase";
-import zekeImage from "@assets/generated_images/ZEKE_AI_automation_workflow_diagram_a784b0b9.png";
+import zekeImage from "@assets/image_1762892026965.png";
 
 export default function ZekeShowcaseExample() {
   return (

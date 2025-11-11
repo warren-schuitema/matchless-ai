@@ -11,7 +11,7 @@ import PricingSection from "@/components/PricingSection";
 import FinalCTA from "@/components/FinalCTA";
 import { Clock, Home as HomeIcon, TrendingUp, FileText, Mail, Calendar, Bot } from "lucide-react";
 import heroImage from "@assets/generated_images/Stressed_parent_missing_family_time_d61982ac.png";
-import zekeImage from "@assets/generated_images/ZEKE_AI_automation_workflow_diagram_a784b0b9.png";
+import zekeImage from "@assets/image_1762892026965.png";
 import finalImage from "@assets/generated_images/Final_CTA_family_success_045409a7.png";
 import shaunPhoto from "@assets/Shaun Richardson image_1762891403477.jpg";
 import kellyPhoto from "@assets/Kelly McCord Image_1762891407534.jpg";
