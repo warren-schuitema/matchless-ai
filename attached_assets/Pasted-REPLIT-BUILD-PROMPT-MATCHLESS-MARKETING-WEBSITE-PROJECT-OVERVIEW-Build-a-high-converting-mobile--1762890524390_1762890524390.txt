@@ -1,0 +1,598 @@
+REPLIT BUILD PROMPT: MATCHLESS MARKETING WEBSITE
+PROJECT OVERVIEW
+Build a high-converting, mobile-first website for Matchless Marketing, an AI automation consulting service specifically for parent entrepreneurs. This is NOT a generic corporate consulting site. It needs to feel warm, relatable, and speak directly to overwhelmed parents running businesses from home.
+Target Audience: Parent entrepreneurs doing $100k-900k revenue who are drowning in manual work (especially content creation), missing family time, and feeling left behind by competitors using AI.
+Primary Goal: Convert visitors into $1,000-1,500 assessment bookings that lead to $500-1500/month retainer clients.
+Brand Personality: Professional but approachable. Empathetic without being soft. Results-focused but acknowledges the chaos of parenting. Direct and clear, no corporate jargon.
+
+CRITICAL: YOU HAVE TWO REFERENCE DOCUMENTS
+Document 1: Relume Sitemap Structure
+This defines the page structure, sections, and layout. Use this as your architectural blueprint.
+Document 2: Complete Website Copy (matchless-marketing-complete-copy.md)
+This contains ALL the actual copy for every section. DO NOT write your own headlines or body copy. Use the copy from this document EXACTLY as written. It's been professionally written for conversion.
+Your job: Combine the sitemap structure with the provided copy to build a cohesive, high-converting website.
+
+SITE STRUCTURE (7 Pages)
+
+Homepage - Hero, Pain Points, Solution, Process, Testimonials, ZEKE Showcase, Services, Pricing, Final CTA
+About - Personal intro, Story, Philosophy, Credentials, Personal Touch
+Services - Hero, Service Categories, Process, Pricing, FAQ
+Results - Stats, Testimonials, 3 Case Studies, Personal Example, Disclaimer
+Resources/Blog - Hero, Featured Posts, Blog Listing, Newsletter Signup
+Blog Post (Template) - Standard blog post layout
+Book Assessment - Hero, Assessment Options, What to Expect, Contact Form, FAQ
+
+
+DESIGN DIRECTION
+What This Site IS:
+
+Warm and Relatable: Feels like talking to a friend who genuinely understands your struggle
+Modern but Not Cold: Clean design with personality, not sterile tech-bro aesthetic
+Mobile-First: 50%+ of traffic will be parents checking on their phones between tasks
+Scannable: Busy parents need to grasp value in 10 seconds, then dive deeper if interested
+Trustworthy: Professional enough for $1,000+ purchases, approachable enough for parent entrepreneurs
+
+What This Site IS NOT:
+
+Generic corporate consulting site (boring, lifeless)
+Overly designed agency portfolio (flashy, intimidating)
+Cookie-cutter template site (looks like everyone else)
+Tech-heavy developer showcase (alienating to non-technical audience)
+
+Visual References:
+
+Look at: https://r3dpill.vercel.app/ (demo site from friend - note the clean, modern feel)
+Inspiration: Conversion-focused SaaS landing pages, but warmer
+Avoid: Corporate stock photos, cold color schemes, overwhelming visuals
+
+
+DESIGN SPECIFICATIONS
+Color Palette:
+Primary Colors:
+
+Deep Blue or Teal (#2C5F7F or similar) - Trust, stability, professionalism
+Warm Accent (Coral #FF6B6B or Gold #F4A261) - Energy, optimism, action
+
+Supporting Colors:
+
+Neutral Grays (#F8F9FA for backgrounds, #495057 for text)
+Pure White (#FFFFFF) for clarity
+Success Green (#4CAF50) for positive outcomes/stats
+Warning Orange for urgency elements (sparingly)
+
+Usage:
+
+Primary blue: Navbar, headers, main CTAs
+Warm accent: Secondary CTAs, highlights, hover states
+Grays: Body text, backgrounds, subtle dividers
+White: Cards, sections, breathing room
+
+Typography:
+Headings:
+
+Font: Inter, Poppins, or similar modern sans-serif
+Weight: 600-700 (Semi-Bold to Bold)
+Size Scale: H1 (48-56px desktop, 36-40px mobile), H2 (36-42px desktop, 28-32px mobile)
+Line Height: 1.2-1.3 for readability
+
+Body Text:
+
+Font: Inter, Open Sans, or similar readable sans-serif
+Weight: 400 (Regular), 500 for emphasis
+Size: 18-20px (larger than typical for easy reading while multitasking)
+Line Height: 1.6-1.8 for comfortable reading
+Color: #333333 or #495057 (not pure black)
+
+Mobile Considerations:
+
+Even larger font sizes on mobile (easier to read while holding a kid)
+Generous tap targets (44x44px minimum for buttons)
+Shorter line lengths (60-70 characters max)
+
+Layout & Spacing:
+
+Whitespace is Critical: Don't cram content. Give it room to breathe.
+Section Padding: 80-120px vertical on desktop, 60-80px on mobile
+Content Width: Max 1200px for readability
+Grid: 12-column responsive grid
+Cards: Subtle shadows, rounded corners (8-12px radius)
+
+Components:
+Buttons (CTAs):
+
+Primary CTA ("Get Your Assessment"): Large (min 48px height), prominent color, clear text
+Secondary CTA: Outlined or ghost style, less prominent
+Hover states: Subtle scale (1.05x) or color shift
+Mobile: Full-width or prominent centered placement
+
+Cards:
+
+Light background (#FFFFFF or #F8F9FA)
+Subtle shadow: 0 2px 8px rgba(0,0,0,0.1)
+Rounded corners: 8-12px
+Padding: 24-32px
+Hover: Lift effect (increase shadow)
+
+Testimonials:
+
+Photo (circular, 64-80px)
+Name and business type clearly displayed
+Quote in larger text (20-22px)
+Stars or visual indicator of satisfaction (optional)
+
+Icons:
+
+Style: Line icons or minimal solid icons (consistent set)
+Size: 32-48px for feature sections
+Color: Match primary or accent colors
+Source: Heroicons, Feather Icons, or Lucide
+
+Forms:
+
+Clean, minimal design
+Clear labels above fields
+Validation messages (friendly tone)
+Submit buttons: Prominent, action-oriented text
+Privacy note below (small text)
+
+
+HOMEPAGE SPECIFIC DESIGN NOTES
+Hero Section:
+
+Layout: 60% text/CTA on left, 40% image/visual on right (desktop), stacked on mobile
+Headline: LARGE and bold (48-56px), immediately communicates the problem and solution
+CTA: Prominent button ("Get Your Assessment"), above the fold
+Trust Badge: "Trusted by 25+ parent-run businesses" - subtle, not overwhelming
+Background: Clean gradient or solid color, NOT busy patterns
+Image: Show a realistic parent working from home (NOT corporate stock photo)
+
+Pain Points Section:
+
+Visual Style: Slightly darker background or subtle texture to differentiate
+Icons: Consistent style, not overly playful (this is about real struggles)
+3-Column Layout: Equal width, clear hierarchy
+Tone: Empathetic but not doom-and-gloom
+
+Solution Section:
+
+Visual Style: Brighter than pain section (visual transition from problem to solution)
+Before/After Visual: Show workflow transformation if possible
+Benefit Callouts: Clear, scannable, each with supporting text
+
+Process Section:
+
+Visual: Timeline or numbered steps with connecting elements
+Icons: Large, clear, consistent
+Mobile: Stack vertically with clear progression
+
+Testimonials:
+
+Layout: 3-column grid (desktop), carousel or stacked (mobile)
+Photos: If available, use them. If not, use initials in colored circles
+Stats Below: Large numbers, small descriptive text
+
+ZEKE Showcase:
+
+Visual: Workflow diagram or screenshot (make it impressive but not intimidating)
+Callout Box: Highlighted section within this area for key message
+Tone: "Look what's possible" not "look how technical I am"
+
+Services Overview:
+
+4-Card Grid: 2x2 on desktop, stacked on mobile
+Icons: Consistent style, colorful but professional
+Hover Effects: Subtle lift or glow
+
+Pricing Section:
+
+Layout: Clean, minimal, no tricks or hidden info
+Pricing Cards: Side-by-side or stacked, clear comparison
+Emphasis: "Fully credited" message should stand out
+
+Final CTA:
+
+Visual: Hero-style section with optimistic image
+Large CTA Button: Cannot be missed
+Secondary Option: Smaller but still visible
+
+
+TECHNICAL REQUIREMENTS
+Performance:
+
+Page Load: Under 3 seconds on 3G connection
+Lighthouse Score: 90+ (Performance, Accessibility, Best Practices, SEO)
+Image Optimization: WebP format, lazy loading, proper sizing
+Code Splitting: Load only what's needed for current page
+
+Responsive Design:
+
+Breakpoints:
+
+Mobile: 320-768px
+Tablet: 769-1024px
+Desktop: 1025px+
+
+
+Mobile-First: Build for mobile, enhance for desktop
+Touch Targets: 44x44px minimum for all interactive elements
+Orientation: Support both portrait and landscape
+
+Integrations:
+TidyCal (Booking):
+
+Embed booking widgets for:
+
+4-Hour Assessment
+8-Hour Assessment
+15-Minute Clarity Call
+
+
+Placement: Book Assessment page + CTAs throughout site
+Fallback: Direct links if embed not possible
+
+AWS API (Contact Forms):
+
+Form submissions to AWS Lambda endpoint
+Fields: Name, Email, Phone (optional), Message
+Validation: Client-side and server-side
+Success/Error messages
+Privacy: GDPR-compliant language
+
+Stripe (Future):
+
+Payment links ready for future product sales
+Not active yet, but code structure should support easy integration
+
+Email Capture:
+
+Newsletter signups via API endpoint
+Validation and confirmation
+Double opt-in recommended
+
+SEO:
+
+Meta Tags: Title, description, Open Graph, Twitter Cards for every page
+Structured Data: Organization, Person, Service schema
+Alt Text: All images properly described
+Semantic HTML: Proper heading hierarchy, landmarks
+Sitemap: XML sitemap generated
+Robots.txt: Properly configured
+
+Accessibility (WCAG 2.1 AA):
+
+Color Contrast: 4.5:1 minimum for body text, 3:1 for large text
+Keyboard Navigation: All interactive elements accessible via keyboard
+Screen Reader: Proper ARIA labels, landmarks, descriptions
+Focus Indicators: Clear focus states for all interactive elements
+Alt Text: Descriptive for all images
+
+Security:
+
+SSL Certificate: HTTPS everywhere
+Form Protection: CSRF tokens, rate limiting
+Content Security Policy: Proper headers
+No Inline Scripts: Separate JS files
+
+
+CONTENT IMPLEMENTATION
+Critical Rule: USE THE PROVIDED COPY
+The file matchless-marketing-complete-copy.md contains professionally written, conversion-optimized copy for every section.
+DO NOT:
+
+Write your own headlines
+Paraphrase the copy
+Use generic placeholder text
+Skip sections
+
+DO:
+
+Copy the exact headlines, subheadlines, and body text from the document
+Match the copy to the correct section from the Relume sitemap
+Preserve formatting (bold, lists, callout boxes)
+Use the provided CTAs word-for-word
+
+Mapping Copy to Sections:
+The copy document is organized by:
+
+Page name (e.g., "PAGE 1: HOMEPAGE")
+Section name (e.g., "SECTION 1: HERO HEADER")
+Elements (Headline, Subheadline, Body, CTA)
+
+Example:
+Relume Sitemap says: "Hero Header Section"
+Copy Document says: "SECTION 1: HERO HEADER"
+Implementation: Use the headline "Stop Drowning in Business Tasks..." exactly as written
+Special Copy Elements:
+Callout Boxes:
+
+Visually distinct (border, background color, or shadow)
+Used for key quotes or important points
+Example: "I was spending 15 hours a week on content..."
+
+Bullet Points:
+
+Use checkmarks (✓) for included features
+Use standard bullets (•) for lists
+Maintain hierarchy and indentation
+
+Testimonials:
+
+Name, business type, quote, photo placeholder
+All provided in the copy document
+Use as written (these are real clients)
+
+
+BRANDING ELEMENTS
+Logo:
+
+Text: "Matchless Marketing"
+Style: Modern, clean, professional
+If creating a logo mark: Consider flame/spark imagery (matches "matchless" theme)
+Navbar: Logo left, menu center/right, CTA button far right
+
+Brand Voice in Copy:
+
+Already written for you in the copy document
+Professional but conversational
+Empathetic without being patronizing
+Direct without being harsh
+Results-focused but human
+
+Imagery Style:
+(To be provided by Nanobanana, but guide Replit on placement)
+Hero Images:
+
+Realistic parent entrepreneurs (NOT corporate stock photos)
+Home office settings, family visible in background
+Warm lighting, authentic moments
+Diverse representation
+
+Workflow Diagrams:
+
+Clean, modern, easy to understand
+Use brand colors
+Show before/after or system connections
+ZEKE diagram should be impressive but not intimidating
+
+Icons:
+
+Consistent set throughout (Heroicons, Feather, or Lucide)
+Use brand colors
+Appropriate size and weight
+
+
+NAVIGATION & FOOTER
+Navbar (All Pages):
+Layout:
+
+Sticky on scroll
+Logo: Left aligned
+Menu Items: Home | About | Services | Results | Resources | Book Assessment
+CTA Button: "Get Your Assessment" (right aligned, prominent)
+Mobile: Hamburger menu, CTA visible
+
+Behavior:
+
+Smooth scroll to sections on same page
+Active state for current page
+Hover states for all links
+Mobile menu: Full-screen or slide-in
+
+Footer (All Pages):
+Layout (4 columns):
+Column 1: About
+
+Short description (from copy document)
+"Matchless Marketing helps parent entrepreneurs automate..."
+
+Column 2: Quick Links
+
+About Warren
+Services
+Client Results
+Blog & Resources
+Book Assessment
+Privacy Policy
+Terms of Service
+
+Column 3: Contact
+
+Email: warren@matchless-marketing.com
+Phone: (616) 636-1730
+Location: Allegan, MI
+
+Column 4: Follow Us
+
+LinkedIn (Company): https://www.linkedin.com/company/matchlessmarketingllc/
+LinkedIn (Warren): https://www.linkedin.com/in/warren-schuitema-9244721a
+Facebook (Company): https://www.facebook.com/profile.php?id=61554191072512
+Facebook (Warren): https://www.facebook.com/warren.schuitema/
+
+Bottom Bar:
+
+Copyright: © 2025 Matchless Marketing LLC. All rights reserved.
+Center aligned or left aligned
+
+Mobile Footer:
+
+Accordion-style columns OR stacked
+Still easily scannable
+
+
+PAGE-SPECIFIC NOTES
+About Page:
+
+Personal Story Section: This is CRITICAL for trust. Must feel authentic, vulnerable, relatable.
+Photo: Need warm, approachable photo of Warren (not corporate headshot)
+Family Context: Mentioned but not overly personal
+
+Services Page:
+
+Service Categories: Expandable/accordion OR tabbed interface
+Process Timeline: Visual timeline with clear phases
+FAQ: Accordion-style, expandable
+
+Results Page:
+
+Stats: LARGE numbers, small descriptive text
+Case Studies: Cards or sections, before/after emphasis
+Disclaimer: Clear but not buried (builds trust)
+
+Resources/Blog:
+
+Featured Posts: Above the fold, 3 posts highlighted
+Blog Grid: Card-based, filterable by category (optional)
+Newsletter Signup: Prominent but not intrusive
+
+Blog Post Template:
+
+Clean Typography: Focus on readability
+Generous Margins: Easy on the eyes
+Share Buttons: Social sharing (optional)
+Related Posts: 3 posts at bottom
+
+Book Assessment:
+
+Assessment Options: Clear comparison, side-by-side
+TidyCal Embeds: Primary interaction method
+What to Expect: Timeline visual, step-by-step
+Contact Form: Clean, minimal, easy to fill
+
+
+CONVERSION OPTIMIZATION
+CTA Strategy:
+
+Primary CTA: "Get Your Assessment" (appears 8-10 times across homepage)
+Secondary CTA: "Book Free Clarity Call" (less prominent, still accessible)
+Button Text: Action-oriented, specific, not generic
+
+Placement:
+
+Hero section (above fold)
+After pain points (when problem is fresh)
+After testimonials (social proof moment)
+After pricing (remove objections, then ask)
+Final CTA section (last chance)
+
+Visual Hierarchy:
+
+Most important elements: Largest, highest contrast
+CTAs: Prominent color, cannot be missed
+Supporting content: Clear but not distracting
+
+Trust Signals:
+
+Testimonials with real names (Shaun Richardson, Kelly McCord, Phil Taylor)
+Stats (25+ businesses, 200+ hours saved)
+Credentials (certifications, speaking)
+Transparent pricing (no hidden fees)
+
+Objection Handling:
+
+FAQ sections address common concerns
+Disclaimer on Results page (honesty builds trust)
+Assessment descriptions show value even if they don't proceed
+
+
+MOBILE-SPECIFIC CONSIDERATIONS
+Critical for This Audience:
+Parent entrepreneurs are checking this site while:
+
+Waiting in carpool line
+During kids' activities
+Between meetings
+Late at night after kids are asleep
+
+Therefore:
+
+Fast loading (3G speeds)
+Easy to scan (large text, clear sections)
+Thumb-friendly (bottom navigation, large tap targets)
+Minimal typing (pre-fill options where possible)
+
+Mobile Layout:
+
+Stack all columns
+Full-width CTAs
+Collapsible sections (accordion) for long content
+Sticky CTA at bottom of screen (optional)
+Easy-to-tap phone and email links
+
+
+TESTING REQUIREMENTS
+Before considering the site complete, test:
+Functionality:
+
+ All links work (internal and external)
+ Forms submit correctly
+ TidyCal embeds work
+ Mobile menu opens/closes
+ Smooth scroll works
+ Social media links open correctly
+
+Responsive:
+
+ Test on iPhone (Safari)
+ Test on Android (Chrome)
+ Test on iPad
+ Test on various desktop sizes
+
+Performance:
+
+ Lighthouse score 90+
+ Images load quickly
+ No layout shift
+ Fast Time to Interactive
+
+Accessibility:
+
+ Keyboard navigation works
+ Screen reader test (NVDA or VoiceOver)
+ Color contrast passes
+ All images have alt text
+
+
+DELIVERABLES
+When complete, provide:
+
+Fully functional website deployed and live
+Source code (organized, commented)
+README with:
+
+How to run locally
+How to deploy
+How to update content
+Integration instructions (TidyCal, AWS API)
+
+
+Asset list showing what images are needed from Nanobanana
+Test results (Lighthouse scores, responsive tests)
+
+
+FINAL NOTES
+What Makes This Site Different:
+
+It's Not Generic: Every word of copy is custom-written for this specific audience
+It's Authentic: The About page tells Warren's real story, not a manufactured narrative
+It's Conversion-Focused: Every section drives toward the assessment booking
+It's Parent-Friendly: Design and UX acknowledge the chaos of parenting
+It's Honest: Disclaimers and realistic expectations build trust
+
+Your Success Criteria:
+
+A busy parent entrepreneur can understand the value in 10 seconds
+The site feels warm and trustworthy, not corporate and cold
+Every CTA is clear and compelling
+Mobile experience is as good as (or better than) desktop
+The site stands out from generic consulting competitors
+
+Build this site with the understanding that every visitor is:
+
+Overwhelmed and time-starved
+Skeptical of promises
+Looking for someone who "gets it"
+Ready to invest if they believe you can help
+Probably checking this while multitasking
+
+If you do this right, Warren will have a site that converts cold traffic into $1,000+ bookings by December 29th when he speaks at the Goal Achiever's Summit.
+Let's build something great.
