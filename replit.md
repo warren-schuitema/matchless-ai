@@ -6,6 +6,15 @@ Matchless Marketing is a conversion-focused marketing website for an AI automati
 
 The website features a multi-page architecture with dedicated sections for services, results/testimonials, resources, and booking assessments. Design emphasizes warm, approachable professionalism with modern gradients, smooth animations, and mobile-first responsiveness.
 
+## Recent Changes
+
+**November 11, 2025 - Booking System Enhancement**
+- Replaced TidyCal iframe embed with cleaner direct-link booking approach
+- Created `BookingOptions` component featuring three booking tiers in card format
+- Featured 30-minute Free Assessment as recommended option with visual prominence (badge, border highlight, scale)
+- Improved reliability and user experience by eliminating iframe dependency
+- All booking cards open TidyCal scheduling in new tabs with proper security attributes
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -40,7 +49,7 @@ Preferred communication style: Simple, everyday language.
 - `/services` - Service offerings and process details
 - `/results` - Case studies and client testimonials
 - `/resources` - Blog/content hub
-- `/book` - Assessment booking with TidyCal embed
+- `/book` - Assessment booking with three-tier booking cards linking directly to TidyCal (15min Quick Chat, 30min Free Assessment featured, 60min Deep Dive $60)
 
 ### Backend Architecture
 
@@ -78,7 +87,7 @@ Preferred communication style: Simple, everyday language.
 ### External Dependencies
 
 **Third-Party Services:**
-- TidyCal for appointment scheduling/booking embeds
+- TidyCal for appointment scheduling via direct booking links (warren2 path)
 - Replit development tools (cartographer, dev banner, runtime error overlay)
 - Neon Database for serverless PostgreSQL (configured but not required for basic operation)
 
