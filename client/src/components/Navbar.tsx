@@ -17,11 +17,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-background border-b">
+    <nav className="sticky top-0 z-50 glass-effect backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary" data-testid="logo">
+            <span className="text-2xl font-bold gradient-text" data-testid="logo">
               Matchless Marketing
             </span>
           </Link>
