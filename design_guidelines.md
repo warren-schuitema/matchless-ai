@@ -3,62 +3,78 @@
 ## Design Direction & Brand Personality
 
 **What This Site IS:**
-- Warm and relatable (feels like talking to a friend who understands your struggle)
-- Modern but not cold (clean design with personality, not sterile tech aesthetic)
-- Mobile-first (50%+ traffic will be parents checking on phones between tasks)
-- Scannable (busy parents need to grasp value in 10 seconds)
-- Trustworthy (professional enough for $1,000+ purchases, approachable for parent entrepreneurs)
+- Modern premium aesthetic with warmth (Revolut-inspired gradients meets approachable personality)
+- Bold and minimal (large typography, generous whitespace, confident design)
+- Mobile-first with smooth animations (scroll effects, transitions, micro-interactions)
+- Visually striking (vibrant gradients, glassmorphism, 3D perspectives)
+- Trustworthy and premium (professional enough for high-ticket services, modern enough to stand out)
 
 **What This Site IS NOT:**
 - Generic corporate consulting site
-- Overly designed agency portfolio
-- Cookie-cutter template site
-- Tech-heavy developer showcase
+- Flat, boring template design
+- Cluttered with information
+- Overly corporate or cold
 
-**Visual Reference:** https://r3dpill.vercel.app/ (note the clean, modern feel)
+**Visual References:** 
+- Revolut.com (vibrant gradients, bold minimal design, smooth animations)
+- Modern SaaS landing pages (clean, premium, conversion-focused)
 
 ---
 
 ## Color Palette
 
-**Primary Colors:**
-- Deep Blue or Teal (#2C5F7F) - Trust, stability, professionalism
-- Warm Accent: Coral (#FF6B6B) or Gold (#F4A261) - Energy, optimism, action
+**Primary Gradient (Hero & Key Sections):**
+- Vibrant multi-color gradient: Teal → Purple → Coral
+- Creates energy, modernity, and visual interest
+- Used for: Hero backgrounds, feature sections, CTAs
 
-**Supporting Colors:**
-- Neutral Grays (#F8F9FA backgrounds, #495057 text)
-- Pure White (#FFFFFF) for clarity
-- Success Green (#4CAF50) for positive outcomes/stats
-- Warning Orange for urgency (sparingly)
+**Base Colors:**
+- Dark Background: #0A0A0A to #1A1A1A (deep, premium black)
+- Light Background: #FFFFFF with subtle gradient overlays
+- Glass Effect: rgba(255,255,255,0.1) with blur for glassmorphism
+
+**Accent Colors:**
+- Teal: #14B8A6 (primary brand, trust)
+- Coral/Pink: #FF6B9D (energy, warmth, CTAs)
+- Purple: #8B5CF6 (premium, creativity)
+- Success: #10B981 (stats, positive outcomes)
+
+**Text Colors:**
+- Primary: #FFFFFF on dark, #0A0A0A on light
+- Secondary: rgba(255,255,255,0.7) on dark, rgba(0,0,0,0.6) on light
+- Accent: Gradient text effects for headlines
 
 **Usage:**
-- Primary blue: Navbar, headers, main CTAs
-- Warm accent: Secondary CTAs, highlights, hover states
-- Grays: Body text, backgrounds, subtle dividers
-- White: Cards, sections, breathing room
+- Gradients: Hero sections, cards, buttons, backgrounds
+- Glass effects: Overlays, floating cards, modals
+- Dark mode priority: Design dark-first, adapt to light
 
 ---
 
 ## Typography
 
 **Headings:**
-- Font: Inter or Poppins (modern sans-serif)
-- Weight: 600-700 (Semi-Bold to Bold)
-- H1: 48-56px desktop, 36-40px mobile
-- H2: 36-42px desktop, 28-32px mobile
-- Line Height: 1.2-1.3
+- Font: Inter or Poppins (modern sans-serif, geometric)
+- Weight: 700-800 (Bold to Extra Bold for impact)
+- H1: 64-80px desktop, 40-48px mobile (LARGE and bold)
+- H2: 48-56px desktop, 32-40px mobile
+- H3: 32-40px desktop, 24-28px mobile
+- Line Height: 1.1-1.2 (tight for impact)
+- Letter Spacing: -0.02em (slightly negative for modern look)
+- Gradient text effects on key headlines
 
 **Body Text:**
-- Font: Inter or Open Sans
-- Weight: 400 regular, 500 for emphasis
-- Size: 18-20px (larger than typical for easy reading while multitasking)
+- Font: Inter (consistent, clean, readable)
+- Weight: 400 regular, 500 medium for emphasis
+- Size: 18-20px (comfortable reading)
 - Line Height: 1.6-1.8
-- Color: #333333 or #495057 (not pure black)
+- Color: High contrast - white on dark, dark on light
+- Larger line height for paragraph content
 
-**Mobile Considerations:**
-- Even larger font sizes on mobile
-- Generous tap targets (44x44px minimum)
-- Shorter line lengths (60-70 characters max)
+**Special Effects:**
+- Gradient text on headlines
+- Subtle glow effects on dark backgrounds
+- Smooth fade-in animations on scroll
 
 ---
 
