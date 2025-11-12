@@ -91,7 +91,7 @@ export default function Home() {
       name: "Shaun Richardson",
       businessType: "Business Consultant",
       quote:
-        "Before working with Warren, I was spending 20 hours a week just keeping up with content. Now my automation handles it in 2 hours, and it's actually better quality. I took on three new clients with the time I got back, and I'm home for dinner every night.",
+        "Working and learning with Warren has been an amazing experience. He's an absolute wizard with AI! The value he brings to the table is incredible and he's always willing to share his knowledge. Top man!",
       photoSrc: shaunPhoto,
     },
     {
