@@ -152,30 +152,30 @@ export default function Services() {
     {
       icon: Brain,
       title: "AI Integration & Automation",
-      subtitle: "Technology That Amplifies Your Mission",
-      description: "After 10 years training sales teams and managing lead generation, I know exactly where businesses lose time: slow response times, poor follow-up, and wasted hours on repetitive tasks. I build AI systems that fix those problems—24/7 chatbots, automated follow-ups, and call analysis that coaches your team automatically—so you can focus on what matters most: serving people and advancing your mission.",
-      tagline: "Whether you need a chatbot for customer support, an AI assistant for lead qualification, or automated call analysis for your sales team, I create solutions tailored to your specific workflow and kingdom purposes.",
+      subtitle: "Stop Missing Bedtime. Let AI Handle the Rest.",
+      description: "After 10 years training sales teams and managing lead generation, I know exactly where parent entrepreneurs lose precious time: answering the same customer questions at 9pm, manually following up with leads during family dinner, and spending weekends on repetitive tasks. I build AI systems that handle these automatically—24/7 chatbots that respond while you're tucking kids in, automated follow-ups that run while you're at the park, and intelligent systems that keep your business running without sacrificing family time.",
+      tagline: "Custom AI solutions designed around your life as a parent entrepreneur—systems that work around the clock so you don't have to.",
       examples: [
-        "Sales call analyzer with automated transcription and coaching insights",
-        "24/7 chatbot for customer inquiries and lead qualification",
-        "Automated donor follow-up system for nonprofits"
+        "Answer customer questions instantly (even at 2am) without lifting a finger",
+        "Qualify and nurture leads automatically while you're at soccer practice",
+        "Get coaching insights from sales calls without hours of manual review"
       ],
       pricing: "$5,000",
-      pricingNote: "Custom quote based on complexity",
+      pricingNote: "Custom quote based on complexity. Most clients reclaim 10-15 hours/week.",
       image: aiDashboard,
       cta: "Get Started - $5,000",
       learnMore: "Learn Why AI"
     },
     {
       icon: Globe,
-      title: "Digital Platforms That Serve Your Community",
-      subtitle: "Fast, Functional Websites Built for Impact",
-      description: "Fast, functional websites that connect you with the people you serve. I build professional sites in days, not months, using modern tools like Wix, custom code, Wouter, and Readspeaker. Every platform is designed to strengthen your community impact and advance your mission.",
-      tagline: "From churches and nonprofits to faith-driven businesses and service organizations, I create responsive, SEO-optimized websites with booking systems, payment processing, and content management that help you serve more effectively.",
+      title: "Digital Platforms That Work While You Parent",
+      subtitle: "Your Business Never Sleeps (So You Can)",
+      description: "Fast, professional websites that capture leads and convert customers 24/7—whether you're at the playground, helping with homework, or finally getting some sleep. I build modern sites in days (not months) using proven tools and frameworks. Your website becomes your most reliable employee: always on, never complaining, and working overtime so you don't have to.",
+      tagline: "Responsive, mobile-friendly sites with booking systems, payment processing, and lead capture that turn visitors into customers while you're living your life.",
       examples: [
-        "Luxury gym website with booking and payment integration",
-        "Nonprofit site with donation flow and member forum",
-        "Service business sites with lead capture forms"
+        "Capture and qualify leads automatically while you're at soccer practice",
+        "Accept bookings and payments 24/7 without manual scheduling",
+        "SEO-optimized sites that attract customers while you sleep"
       ],
       pricing: "$5,000",
       pricingNote: "Most sites live in 3-5 days. Simple sites in 48 hours.",
@@ -185,34 +185,34 @@ export default function Services() {
     },
     {
       icon: Workflow,
-      title: "Systems That Free You to Focus",
-      subtitle: "Streamline Operations & Reclaim Your Time",
-      description: "Streamline your operations with custom workflows and automation that serve your mission. I build n8n workflows, email sequences, lead scoring systems, and CRM integrations that save hours of manual work every week—so you can invest more time in the people and purposes that matter.",
-      tagline: "Stop wasting time on repetitive tasks. Let automation handle data entry, follow-ups, notifications, and reporting with excellence, while you focus on serving your community and advancing kingdom purposes.",
+      title: "Systems That Give You Your Evenings Back",
+      subtitle: "Automate the Busy Work. Reclaim Family Time.",
+      description: "Remember when you started your business to have MORE freedom, not less? I build workflow automation that eliminates the repetitive tasks eating up your nights and weekends. Email sequences that nurture leads while you're at the park. CRM updates that happen automatically. Follow-ups that don't require you to set reminders at 11pm. These aren't just time-savers—they're freedom-makers.",
+      tagline: "Stop choosing between growing your business and being present for your kids. Smart automation handles the repetitive work so you can focus on what actually matters.",
       examples: [
-        "n8n workflows for automated lead nurturing",
-        "Email sequences with personalized follow-ups",
-        "Lead scoring and qualification automation"
+        "Automated lead nurturing that runs while you're reading bedtime stories",
+        "Email sequences that follow up with prospects without you remembering",
+        "Workflow automation that saves 10-15 hours every single week"
       ],
       pricing: "$3,000",
-      pricingNote: "Most clients save 10-15 hours/week within the first month.",
+      pricingNote: "Most clients reclaim their evenings within the first month.",
       image: businessSystems,
       cta: "Get Started - $3,000",
       learnMore: "Learn Why AI"
     },
     {
       icon: Video,
-      title: "Storytelling That Shares Your Purpose",
-      subtitle: "Content Creation That Connects & Inspires",
-      description: "AI-powered content creation that tells your brand story and shares your mission. I create social media content, video with Sora, and marketing materials that connect with your audience, build community, and advance kingdom purposes through authentic storytelling.",
-      tagline: "From social media strategy to video production, I help you build a consistent brand presence that attracts the right people, strengthens relationships, and serves your community with excellence.",
+      title: "Content That Works While You Live",
+      subtitle: "Build Authority Without Sacrificing Weekends",
+      description: "Stop spending every Saturday creating social media posts. I build AI-powered content systems that maintain your brand presence without stealing your family time. Consistent, engaging content that attracts ideal clients and builds your authority—created in hours instead of days, scheduled weeks in advance, all while you're actually living your life instead of posting about it.",
+      tagline: "Professional content creation and strategy that keeps your business top-of-mind without requiring you to be glued to your phone during dinner.",
       examples: [
-        "Social media content calendar and creation",
-        "Sora video creation for marketing campaigns",
-        "Brand storytelling and messaging strategy"
+        "Month's worth of social content created in one focused session",
+        "Video content using AI tools (no hours lost to editing)",
+        "Consistent brand presence that doesn't require constant hustle"
       ],
       pricing: "$3,000",
-      pricingNote: "Monthly retainers available",
+      pricingNote: "Monthly retainers available for ongoing content needs.",
       image: contentPlatform,
       cta: "Get Started - $3,000",
       learnMore: "Learn Why AI"
@@ -255,17 +255,17 @@ export default function Services() {
 
           <div className="relative max-w-5xl mx-auto text-center">
             <Badge className="mb-6 text-sm px-4 py-1" data-testid="badge-services-hero">
-              Premium Services
+              For Parent Entrepreneurs
             </Badge>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-8">
-              Transform Your Business
+              Grow Your Business.
               <br />
               <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                With AI Automation
+                Never Miss Bedtime.
               </span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed font-light max-w-3xl mx-auto">
-              Enterprise-grade automation solutions that save you 10-15 hours per week while scaling your impact
+              AI automation that gives you back 10-15 hours every week to spend with your kids—while your business keeps growing
             </p>
           </div>
         </section>
@@ -289,7 +289,7 @@ export default function Services() {
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Book a consultation this week and get a complimentary $500 AI opportunity audit.
-              Find out exactly how AI can grow your business.
+              Find out exactly how AI can give you back your time while growing your business.
             </p>
             <Link href="/book">
               <Button
@@ -308,7 +308,7 @@ export default function Services() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Monthly Retainers</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Ongoing support and optimization for growing teams and businesses.
+              Ongoing support, content creation, and system optimization that keeps your business running smoothly—without eating into family time.
               Starting at $500/mo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
