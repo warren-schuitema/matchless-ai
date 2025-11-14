@@ -10,6 +10,8 @@ import Results from "@/pages/Results";
 import Resources from "@/pages/Resources";
 import BookAssessment from "@/pages/BookAssessment";
 import NotFound from "@/pages/not-found";
+import ScrollToTop from "@/components/ScrollToTop";
+import BackToTopButton from "@/components/BackToTopButton";
 
 function Router() {
   return (
@@ -29,6 +31,8 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ScrollToTop />
+        <BackToTopButton />
         <Toaster />
         <Router />
       </TooltipProvider>
