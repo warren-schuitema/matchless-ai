@@ -8,6 +8,15 @@ The website features a multi-page architecture with dedicated sections for servi
 
 ## Recent Changes
 
+**November 14, 2025 - Enhanced Navigation UX with Scroll Management**
+- Implemented ScrollToTop component that automatically resets scroll position when navigating between pages
+- Created BackToTopButton floating action button that appears when scrolled >300px down any page
+- BackToTopButton features smooth scroll animation using window.scrollTo with behavior: "smooth"
+- Integrated Framer Motion fade/scale animations for BackToTopButton visibility transitions
+- Both components integrated globally in App.tsx, working across all routes (Home, Services, About, Results, Resources, Book)
+- Proper event listener cleanup in BackToTopButton to prevent memory leaks
+- End-to-end tested: auto-scroll on navigation and back-to-top button functionality verified across multiple pages
+
 **November 12, 2025 - Services Page Premium Redesign & Parent Entrepreneur Realignment**
 - Complete overhaul of Services page with scroll-based animations and premium positioning
 - Generated 4 high-quality mockup images for service offerings (AI dashboards, platforms, systems, content)
