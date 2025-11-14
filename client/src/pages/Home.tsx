@@ -111,7 +111,7 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: "25+", label: "Businesses Automated" },
+    { value: "50+", label: "Businesses Automated" },
     { value: "200+", label: "Hours Saved Across All Clients" },
     { value: "8-10", label: "Average Hours Saved Per Week" },
   ];

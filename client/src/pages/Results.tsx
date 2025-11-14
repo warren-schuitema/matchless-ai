@@ -59,7 +59,7 @@ export default function Results() {
   const stats = [
     { icon: Clock, value: "10+", label: "Hours Saved Weekly (Avg)" },
     { icon: TrendingUp, value: "3x", label: "Content Consistency Increase" },
-    { icon: Users, value: "25+", label: "Parent Entrepreneurs Helped" }
+    { icon: Users, value: "50+", label: "Parent Entrepreneurs Helped" }
   ];
 
   return (

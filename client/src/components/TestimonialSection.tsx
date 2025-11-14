@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Quote } from "lucide-react";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 interface Testimonial {
   name: string;
@@ -80,7 +81,7 @@ export default function TestimonialSection({
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2" data-testid={`stat-value-${index}`}>
-                {stat.value}
+                <AnimatedCounter value={stat.value} duration={2.5} />
               </div>
               <div className="text-base text-muted-foreground" data-testid={`stat-label-${index}`}>
                 {stat.label}
