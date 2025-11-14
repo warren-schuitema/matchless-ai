@@ -26,19 +26,29 @@ export default function HeroSection({
       
       <div className="relative max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <motion.div 
-            className="space-y-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white">
+          <div className="space-y-8">
+            <motion.h1 
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0 }}
+            >
               {headline}
-            </h1>
-            <p className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl font-light">
+            </motion.h1>
+            <motion.p 
+              className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl font-light"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+            >
               {subheadline}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center pt-4">
+            </motion.p>
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 items-start sm:items-center pt-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
               <Link href="/book">
                 <Button
                   size="lg"
@@ -49,13 +59,13 @@ export default function HeroSection({
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-            </div>
+            </motion.div>
             {trustBadge && (
               <motion.div 
                 className="flex items-center gap-3 text-white/80 pt-2"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.6 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.45 }}
               >
                 <Users className="w-5 h-5" />
                 <span className="text-base font-medium" data-testid="text-trust-badge">
@@ -63,7 +73,7 @@ export default function HeroSection({
                 </span>
               </motion.div>
             )}
-          </motion.div>
+          </div>
           
           <motion.div 
             className="lg:block"

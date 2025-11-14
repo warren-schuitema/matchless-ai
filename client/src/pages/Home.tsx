@@ -51,7 +51,7 @@ export default function Home() {
     {
       title: "One automation = 8-10 hours back each week",
       description:
-        "Stop manually creating content. Let the system do it while you focus on revenue-generating activities (or actually take your kid to the park).",
+        "Stop manually creating content. Let the system do it while you focus on revenue-generating activities (or take your kid to the park).",
     },
     {
       title: "Custom-built for your business, not cookie-cutter solutions",
@@ -76,13 +76,13 @@ export default function Home() {
       number: 2,
       title: "We Build Your Custom System",
       description:
-        "We build automations tailored to YOUR business. Content creation, client communications, calendar management, whatever you need. You're involved every step because this is YOUR system. We test, refine, and make sure it actually works for your real life.",
+        "We build automations tailored to YOUR business. Content creation, client communications, calendar management, whatever you need. You're involved every step because this is YOUR system. We test, refine, and make sure it works for your real life.",
     },
     {
       number: 3,
       title: "You Get Your Time Back",
       description:
-        "System launches. You get hands-on training, complete documentation, and 30-day support to work out any issues. Then ongoing monthly support keeps everything running smoothly as your business grows.",
+        "System launches. You get hands-on training, complete documentation, and 30-day post-launch hypercare. Then ongoing monthly support keeps everything running smoothly as your business grows.",
     },
   ];
 
@@ -105,7 +105,7 @@ export default function Home() {
       name: "Phil Taylor",
       businessType: "CEO, Goal Achiever's Summit",
       quote:
-        "The content automation Warren built is incredible. What used to take me an entire Saturday now happens automatically while I'm spending time with my family. I'm showing up more consistently online and actually enjoying the process.",
+        "The content automation Warren built is incredible. What used to take me an entire Saturday now happens automatically while I'm spending time with my family. I'm showing up more consistently online and enjoying the process.",
       photoSrc: philPhoto,
     },
   ];
@@ -180,7 +180,7 @@ export default function Home() {
           imageAlt="Stressed parent entrepreneur missing family time while working"
         />
         <PainPointsSection
-          headline="You're Stuck in the Content Trap"
+          headline="You're Stuck in the Content Trap,"
           subheadline="Running a business while raising a family shouldn't mean choosing one over the other. But right now, you're stuck."
           painPoints={painPoints}
         />
@@ -201,6 +201,11 @@ export default function Home() {
           testimonials={testimonials}
           stats={stats}
         />
+        <ServicesSection
+          headline="What We Automate"
+          subheadline="Solutions that deliver real impact."
+          services={services}
+        />
         <ContainerScroll
           titleComponent={
             <div className="space-y-4 mb-12">
@@ -208,7 +213,7 @@ export default function Home() {
                 Meet ZEKE: My AI Assistant
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                This Is What We Build for You
+                What Could You Do with a Customized AI Assistant?
               </p>
             </div>
           }
@@ -224,7 +229,7 @@ export default function Home() {
             I use the same systems I build for clients. ZEKE is my custom AI assistant that connects to my Gmail, Calendar, Zoom, Contacts, blog system, newsletter platform, and social media accounts. I can create an entire week's worth of content with voice commands through WhatsApp or my Meta RayBan glasses while I'm taking a walk or driving.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            The result? Content creation went from 15 hours a week to 2-3 hours. I'm more consistent than I've ever been, the quality is better, and I actually have time to be present with my family.
+            The result? Content creation went from 15 hours a week to 2-3 hours. I'm more consistent than I've ever been, the quality is better, and I have time to be present with my family.
           </p>
           <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-md">
             <p className="text-lg font-medium text-foreground">
@@ -232,11 +237,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <ServicesSection
-          headline="What We Automate"
-          subheadline="Every system we build is custom, but here's where we typically help parent entrepreneurs save the most time."
-          services={services}
-        />
         <PricingSection
           headline="Investment & Process"
           subheadline="Transparent pricing. No hidden fees. No surprises."

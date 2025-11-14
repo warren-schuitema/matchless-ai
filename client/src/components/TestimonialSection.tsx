@@ -40,7 +40,20 @@ export default function TestimonialSection({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2" data-testid={`stat-value-${index}`}>
+                <AnimatedCounter value={stat.value} duration={2.5} />
+              </div>
+              <div className="text-base text-muted-foreground" data-testid={`stat-label-${index}`}>
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="hover-elevate">
               <CardContent className="p-6 md:p-8">
@@ -74,19 +87,6 @@ export default function TestimonialSection({
                 </div>
               </CardContent>
             </Card>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2" data-testid={`stat-value-${index}`}>
-                <AnimatedCounter value={stat.value} duration={2.5} />
-              </div>
-              <div className="text-base text-muted-foreground" data-testid={`stat-label-${index}`}>
-                {stat.label}
-              </div>
-            </div>
           ))}
         </div>
       </div>
