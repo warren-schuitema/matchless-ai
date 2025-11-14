@@ -70,7 +70,7 @@ export default function Home() {
       number: 1,
       title: "Book Your Assessment",
       description:
-        "We start with a deep-dive assessment (4-8 hours depending on your needs). We analyze your current tech stack, review your workflows, and identify your biggest time drains. You walk away with a detailed automation roadmap, even if you don't proceed.",
+        "We start with a deep-dive assessment (half-day to full-day depending on your needs). We analyze your current tech stack, review your workflows, and identify your biggest time drains. You walk away with a detailed automation roadmap, even if you don't proceed.",
     },
     {
       number: 2,
