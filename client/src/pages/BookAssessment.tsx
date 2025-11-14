@@ -167,9 +167,9 @@ export default function BookAssessment() {
                   View Services
                 </Button>
               </Link>
-              <Link href="/results">
-                <Button size="lg" variant="outline" className="text-lg px-10 min-h-14" data-testid="button-view-results">
-                  See Results
+              <Link href="/resources">
+                <Button size="lg" variant="outline" className="text-lg px-10 min-h-14" data-testid="button-view-resources-cta">
+                  View Resources
                 </Button>
               </Link>
             </div>

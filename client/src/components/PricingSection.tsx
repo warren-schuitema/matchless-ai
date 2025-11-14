@@ -1,19 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Link } from "wouter";
 
 interface PricingSectionProps {
   headline: string;
   subheadline: string;
-  onPrimaryCta?: () => void;
-  onSecondaryCta?: () => void;
 }
 
 export default function PricingSection({
   headline,
   subheadline,
-  onPrimaryCta,
-  onSecondaryCta,
 }: PricingSectionProps) {
   return (
     <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-muted/20">
@@ -103,30 +100,47 @@ export default function PricingSection({
             </CardContent>
           </Card>
 
-          <div className="text-center space-y-4">
-            <p className="text-base text-muted-foreground">
-              Not sure which assessment is right for you? Book a free 15-minute
-              clarity call and I'll help you figure it out.
+          <div className="text-center space-y-6">
+            <p className="text-lg font-semibold text-foreground">
+              Ready to get started?
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch">
               <Button
                 size="lg"
-                className="text-lg px-8 min-h-12"
-                onClick={onPrimaryCta}
-                data-testid="button-pricing-primary"
+                variant="outline"
+                className="text-base px-6 min-h-12 flex-1 sm:flex-initial"
+                data-testid="button-book-4hour"
+                asChild
               >
-                Get Your Assessment
+                <Link href="/book">Book 4-Hour Assessment</Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 min-h-12"
-                onClick={onSecondaryCta}
-                data-testid="button-pricing-secondary"
+                className="text-base px-6 min-h-12 flex-1 sm:flex-initial"
+                data-testid="button-book-8hour"
+                asChild
               >
-                Book Free Clarity Call
+                <Link href="/book">Book 8-Hour Assessment</Link>
+              </Button>
+              <Button
+                size="lg"
+                className="text-base px-6 min-h-12 flex-1 sm:flex-initial"
+                data-testid="button-book-clarity"
+                asChild
+              >
+                <a 
+                  href="https://tidycal.com/warren2/15-minute-meeting" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Book 15-Minute Clarity Call
+                </a>
               </Button>
             </div>
+            <p className="text-sm text-muted-foreground">
+              Not sure which is right for you? Start with the free 15-minute clarity call.
+            </p>
           </div>
         </div>
       </div>

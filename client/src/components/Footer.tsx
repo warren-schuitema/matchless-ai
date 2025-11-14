@@ -39,15 +39,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/results"
-                  className="text-base text-muted-foreground hover:text-foreground transition-colors"
-                  data-testid="link-footer-results"
-                >
-                  Client Results
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/resources"
                   className="text-base text-muted-foreground hover:text-foreground transition-colors"
                   data-testid="link-footer-resources"

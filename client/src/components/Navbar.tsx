@@ -10,7 +10,6 @@ export default function Navbar() {
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
     { label: "Services", path: "/services" },
-    { label: "Results", path: "/results" },
     { label: "Resources", path: "/resources" },
     { label: "Book Assessment", path: "/book" },
   ];

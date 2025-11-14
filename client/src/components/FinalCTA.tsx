@@ -43,7 +43,7 @@ export default function FinalCTA({
               {primaryCtaText}
             </Button>
           </Link>
-          <a href="mailto:warren@matchlessmarketing.pro">
+          <a href="mailto:warren@matchless-marketing.com">
             <Button
               size="lg"
               variant="outline"
