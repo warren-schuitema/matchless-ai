@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MatrixBackground from "@/components/MatrixBackground";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
@@ -221,30 +222,7 @@ export default function Services() {
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
-      {/* Animated Matrix-style background */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div
-          className="matrix-bg matrix-glow absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `
-              repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 2px,
-                hsl(var(--primary) / 0.05) 2px,
-                hsl(var(--primary) / 0.05) 4px
-              ),
-              repeating-linear-gradient(
-                90deg,
-                transparent,
-                transparent 2px,
-                hsl(var(--primary) / 0.05) 2px,
-                hsl(var(--primary) / 0.05) 4px
-              )
-            `
-          }}
-        />
-      </div>
+      <MatrixBackground glowOpacity={0.1} speedRanges={{ base: 0.2, overlay: 0.35 }} />
 
       <Navbar />
 
