@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Heart, Users, Zap, Target } from "lucide-react";
 import { Link } from "wouter";
 import speakingImage from "@assets/1IzrAEBuJrhSrkQF4N38o_b8662213a2af4641a7037b4af0ed6291_1762896661479.png";
-import portraitImage from "@assets/6nhZ-Z6mSUuU_0NCG9wc8_569d6ed9e91d4016823b6b4f4e498240_1762896661486.png";
+import portraitImage from "@assets/T3ZI3uCdstgfcw2JGXAVL_eb106c431f6b4e508e7b153e37a54fd3_1763308917719.png";
 import workspaceImage from "@assets/7WHE33eWDQ3WsOKcc-rv6_1a3a65740c354197bd95c10d8c14e46e_1762896661486.png";
 import coffeeShopImage from "@assets/12nq5FoFHvFIRhkmziblw_5b5d3a54994743c4b4172488cb0aafa5_1762896661486.jpg";
 
