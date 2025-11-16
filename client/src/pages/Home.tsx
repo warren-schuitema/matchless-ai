@@ -98,7 +98,7 @@ export default function Home() {
       name: "Kelly McCord",
       businessType: "Business Consultant & Founder, SimpliPhi Management LLC",
       quote:
-        "I was drowning in manual processes and couldn't scale. Warren built automations that not only saved me 10 hours a week but also made it possible to finally hire my first VA with clear systems in place. Game changer for my business and my family.",
+        "Warren is a rare gem who truly understands the realities of building a business while raising a family. He designs AI solutions that help you reclaim time for the priorities that matter most at home. His ZEKE personal assistant framework is brilliant!  My own customized ZEKE has saved me countless hours since I implemented it in mid-2025. If you're looking to streamline your business and get real time back with your family, Warren is absolutely the person to work with.",
       photoSrc: kellyPhoto,
     },
     {
