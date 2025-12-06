@@ -45,9 +45,6 @@ function ServiceSection({ service, index }: { service: any; index: number }) {
           >
             <div className="flex items-center gap-3 mb-4">
               <service.icon className="w-10 h-10 text-primary" />
-              <Badge variant="outline" className="text-sm">
-                {service.pricing}
-              </Badge>
             </div>
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -79,10 +76,6 @@ function ServiceSection({ service, index }: { service: any; index: number }) {
             </div>
 
             <div className="pt-6 border-t border-border">
-              <p className="text-sm text-muted-foreground mb-6">
-                {service.pricingNote}
-              </p>
-
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link href="/book">
                   <Button
@@ -154,68 +147,60 @@ export default function Services() {
       icon: Brain,
       title: "AI Integration & Automation",
       subtitle: "Stop Missing Bedtime. Let AI Handle the Rest.",
-      description: "After 10 years training sales teams and managing lead generation, I know exactly where parent entrepreneurs lose precious time: answering the same customer questions at 9pm, manually following up with leads during family dinner, and spending weekends on repetitive tasks. I build AI systems that handle these automatically—24/7 chatbots that respond while you're tucking kids in, automated follow-ups that run while you're at the park, and intelligent systems that keep your business running without sacrificing family time.",
-      tagline: "Custom AI solutions designed around your life as a parent entrepreneur—systems that work around the clock so you don't have to.",
+      description: "You're answering customer questions at 9pm, following up with leads during dinner, and spending weekends on repetitive tasks. I build AI systems that handle all of this automatically—so your business runs while you're present with your family.",
+      tagline: "24/7 automation that works around the clock so you don't have to.",
       examples: [
         "Answer customer questions instantly (even at 2am) without lifting a finger",
         "Qualify and nurture leads automatically while you're at soccer practice",
         "Get coaching insights from sales calls without hours of manual review"
       ],
-      pricing: "$5,000",
-      pricingNote: "Custom quote based on complexity. Most clients reclaim 10-15 hours/week.",
       image: aiDashboard,
-      cta: "Get Started - $5,000",
+      cta: "Get Started",
       learnMore: "Learn Why AI"
     },
     {
       icon: Globe,
       title: "Digital Platforms That Work While You Parent",
       subtitle: "Your Business Never Sleeps (So You Can)",
-      description: "Fast, professional websites that capture leads and convert customers 24/7—whether you're at the playground, helping with homework, or finally getting some sleep. I build modern sites in days (not months) using proven tools and frameworks. Your website becomes your most reliable employee: always on, never complaining, and working overtime so you don't have to.",
-      tagline: "Responsive, mobile-friendly sites with booking systems, payment processing, and lead capture that turn visitors into customers while you're living your life.",
+      description: "Your website should capture leads and convert customers 24/7—not require constant babysitting. I build modern sites that become your most reliable employee: always on, always working, so you can focus on your family.",
+      tagline: "Lead capture, booking systems, and payment processing that run without you.",
       examples: [
         "Capture and qualify leads automatically while you're at soccer practice",
         "Accept bookings and payments 24/7 without manual scheduling",
         "SEO-optimized sites that attract customers while you sleep"
       ],
-      pricing: "$5,000",
-      pricingNote: "Most sites live in 3-5 days. Simple sites in 48 hours.",
       image: websitePlatform,
-      cta: "Get Started - $5,000",
+      cta: "Get Started",
       learnMore: "Learn Why AI"
     },
     {
       icon: Workflow,
       title: "Systems That Give You Your Evenings Back",
       subtitle: "Automate the Busy Work. Reclaim Family Time.",
-      description: "Remember when you started your business to have MORE freedom, not less? I build workflow automation that eliminates the repetitive tasks eating up your nights and weekends. Email sequences that nurture leads while you're at the park. CRM updates that happen automatically. Follow-ups that don't require you to set reminders at 11pm. These aren't just time-savers—they're freedom-makers.",
-      tagline: "Stop choosing between growing your business and being present for your kids. Smart automation handles the repetitive work so you can focus on what actually matters.",
+      description: "Repetitive tasks are eating up your nights and weekends. I build workflow automation that handles email sequences, CRM updates, and follow-ups automatically—so you stop working at 11pm and start being present.",
+      tagline: "Smart automation that handles the repetitive work so you can focus on what matters.",
       examples: [
         "Automated lead nurturing that runs while you're reading bedtime stories",
         "Email sequences that follow up with prospects without you remembering",
         "Workflow automation that saves 10-15 hours every single week"
       ],
-      pricing: "$3,000",
-      pricingNote: "Most clients reclaim their evenings within the first month.",
       image: businessSystems,
-      cta: "Get Started - $3,000",
+      cta: "Get Started",
       learnMore: "Learn Why AI"
     },
     {
       icon: Video,
       title: "Content That Works While You Live",
       subtitle: "Build Authority Without Sacrificing Weekends",
-      description: "Stop spending every Saturday creating social media posts. I build AI-powered content systems that maintain your brand presence without stealing your family time. Consistent, engaging content that attracts ideal clients and builds your authority—created in hours instead of days, scheduled weeks in advance, all while you're actually living your life instead of posting about it.",
-      tagline: "Professional content creation and strategy that keeps your business top-of-mind without requiring you to be glued to your phone during dinner.",
+      description: "Stop spending every Saturday creating social media posts. I build AI-powered content systems that maintain your brand presence automatically—so you can build authority without sacrificing family time.",
+      tagline: "Consistent content that attracts clients without requiring constant hustle.",
       examples: [
         "Month's worth of social content created in one focused session",
         "Video content using AI tools (no hours lost to editing)",
         "Consistent brand presence that doesn't require constant hustle"
       ],
-      pricing: "$3,000",
-      pricingNote: "Monthly retainers available for ongoing content needs.",
       image: contentPlatform,
-      cta: "Get Started - $3,000",
+      cta: "Get Started",
       learnMore: "Learn Why AI"
     }
   ];
@@ -266,7 +251,7 @@ export default function Services() {
               Free AI Opportunity Audit
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Book a consultation this week and get a complimentary $500 AI opportunity audit.
+              Book a consultation and get a complimentary AI opportunity audit.
               Find out exactly how AI can give you back your time while growing your business.
             </p>
             <Link href="/book">
@@ -287,7 +272,6 @@ export default function Services() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Monthly Retainers</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Ongoing support, content creation, and system optimization that keeps your business running smoothly—without eating into family time.
-              Starting at $500/mo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/book">
