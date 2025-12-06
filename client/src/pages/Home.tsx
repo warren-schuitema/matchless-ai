@@ -173,7 +173,7 @@ export default function Home() {
       <main>
         <HeroSection
           headline="Stop Drowning in Business Tasks. Start Being Present for Your Family."
-          subheadline="Parent entrepreneurs: Automate your content creation, reclaim 10 hours every week, and scale your business without missing another family dinner."
+          subheadline="Parent entrepreneurs: Automate your repetitive tasks, reclaim 10 hours every week, and scale your business without missing another family dinner."
           ctaText="Get Your Assessment"
           trustBadge="Trusted by 50+ parent-run businesses"
           imageSrc={heroImage}
